@@ -28,5 +28,10 @@ urlpatterns = [
 	url(r'^accounts/logout/$', 'starter.views.logout', name='logout'),
 	url(r'^restricted/$', 'starter.views.restricted', name='restricted'),
 
+	# Registration urls
+	url(r'^accounts/register/$', 'starter.views.register', name='register'),
+    url(r'^accounts/register/complete/$', 'starter.views.registration_complete', name='registration_complete'),
+
+
 
 ]
